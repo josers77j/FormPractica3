@@ -1,0 +1,12 @@
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\bin\Debug\net6.0\ItemLibrary.deps.json
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\bin\Debug\net6.0\ItemLibrary.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\bin\Debug\net6.0\ItemLibrary.pdb
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\obj\Debug\net6.0\ItemLibrary.csproj.AssemblyReference.cache
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\obj\Debug\net6.0\ItemLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\obj\Debug\net6.0\ItemLibrary.AssemblyInfoInputs.cache
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\obj\Debug\net6.0\ItemLibrary.AssemblyInfo.cs
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\obj\Debug\net6.0\ItemLibrary.csproj.CoreCompileInputs.cache
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\obj\Debug\net6.0\ItemLibrary.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\obj\Debug\net6.0\refint\ItemLibrary.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\obj\Debug\net6.0\ItemLibrary.pdb
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica3\ItemLibrary\obj\Debug\net6.0\ref\ItemLibrary.dll

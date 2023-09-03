@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FormsPractica3/1.0.0": {
+        "dependencies": {
+          "ItemLibrary": "1.0.0"
+        },
+        "runtime": {
+          "FormsPractica3.dll": {}
+        }
+      },
+      "ItemLibrary/1.0.0": {
+        "runtime": {
+          "ItemLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FormsPractica3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ItemLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
