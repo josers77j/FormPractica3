@@ -1,0 +1,12 @@
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\bin\Debug\net6.0\ProductosLibrary.deps.json
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\bin\Debug\net6.0\ProductosLibrary.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\bin\Debug\net6.0\ProductosLibrary.pdb
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\obj\Debug\net6.0\ProductosLibrary.csproj.AssemblyReference.cache
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\obj\Debug\net6.0\ProductosLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\obj\Debug\net6.0\ProductosLibrary.AssemblyInfoInputs.cache
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\obj\Debug\net6.0\ProductosLibrary.AssemblyInfo.cs
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\obj\Debug\net6.0\ProductosLibrary.csproj.CoreCompileInputs.cache
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\obj\Debug\net6.0\ProductosLibrary.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\obj\Debug\net6.0\refint\ProductosLibrary.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\obj\Debug\net6.0\ProductosLibrary.pdb
+C:\Users\RabanTRJO\Documents\Practica3\FormPractica5\ProductosLibrary\obj\Debug\net6.0\ref\ProductosLibrary.dll
