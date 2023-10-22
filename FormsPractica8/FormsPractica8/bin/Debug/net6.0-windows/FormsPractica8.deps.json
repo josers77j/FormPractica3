@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v6.0": {
       "FormsPractica8/1.0.0": {
         "dependencies": {
-          "BussinesLayer": "1.0.0"
+          "BussinesLayer": "1.0.0",
+          "FluentValidation": "11.8.0"
         },
         "runtime": {
           "FormsPractica8.dll": {}
+        }
+      },
+      "FluentValidation/11.8.0": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.8.0.0"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {},
@@ -91,14 +100,26 @@
       "System.Security.Principal.Windows/4.7.0": {},
       "BussinesLayer/1.0.0": {
         "dependencies": {
-          "DataLayer": "1.0.0"
+          "CommonLayer": "1.0.0",
+          "DataLayer": "1.0.0",
+          "FluentValidation": "11.8.0"
         },
         "runtime": {
           "BussinesLayer.dll": {}
         }
       },
+      "CommonLayer/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "11.8.0"
+        },
+        "runtime": {
+          "CommonLayer.dll": {}
+        }
+      },
       "DataLayer/1.0.0": {
         "dependencies": {
+          "CommonLayer": "1.0.0",
+          "FluentValidation": "11.8.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "runtime": {
@@ -112,6 +133,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidation/11.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TiEaaYqSIAS+wXQv46LRm8Mca092XYNePD0n231Hqlkmm5FuToZoWnjI1ef/vJUxBzqR7/k2vaVQXxijNgVKRQ==",
+      "path": "fluentvalidation/11.8.0",
+      "hashPath": "fluentvalidation.11.8.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
@@ -177,6 +205,11 @@
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
     "BussinesLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "FluentValidation/11.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
@@ -147,10 +160,25 @@
           }
         }
       },
+      "CommonLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FluentValidation": "11.8.0"
+        },
+        "compile": {
+          "bin/placeholder/CommonLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLayer.dll": {}
+        }
+      },
       "DataLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "CommonLayer": "1.0.0",
+          "FluentValidation": "11.8.0",
           "System.Data.SqlClient": "4.8.5"
         },
         "compile": {
@@ -163,6 +191,29 @@
     }
   },
   "libraries": {
+    "FluentValidation/11.8.0": {
+      "sha512": "TiEaaYqSIAS+wXQv46LRm8Mca092XYNePD0n231Hqlkmm5FuToZoWnjI1ef/vJUxBzqR7/k2vaVQXxijNgVKRQ==",
+      "type": "package",
+      "path": "fluentvalidation/11.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.8.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
+      ]
+    },
     "Microsoft.NETCore.Platforms/3.1.0": {
       "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
       "type": "package",
@@ -476,6 +527,11 @@
         "version.txt"
       ]
     },
+    "CommonLayer/1.0.0": {
+      "type": "project",
+      "path": "../CommonLayer/CommonLayer.csproj",
+      "msbuildProject": "../CommonLayer/CommonLayer.csproj"
+    },
     "DataLayer/1.0.0": {
       "type": "project",
       "path": "../DataLayer/DataLayer.csproj",
@@ -484,7 +540,9 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DataLayer >= 1.0.0"
+      "CommonLayer >= 1.0.0",
+      "DataLayer >= 1.0.0",
+      "FluentValidation >= 11.8.0"
     ]
   },
   "packageFolders": {
@@ -520,6 +578,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\RabanTRJO\\Documents\\Practica3\\FormsPractica8\\CommonLayer\\CommonLayer.csproj": {
+              "projectPath": "C:\\Users\\RabanTRJO\\Documents\\Practica3\\FormsPractica8\\CommonLayer\\CommonLayer.csproj"
+            },
             "C:\\Users\\RabanTRJO\\Documents\\Practica3\\FormsPractica8\\DataLayer\\DataLayer.csproj": {
               "projectPath": "C:\\Users\\RabanTRJO\\Documents\\Practica3\\FormsPractica8\\DataLayer\\DataLayer.csproj"
             }
@@ -535,6 +596,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.8.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

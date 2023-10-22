@@ -1,0 +1,12 @@
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\bin\Debug\net6.0\CommonLayer.deps.json
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\bin\Debug\net6.0\CommonLayer.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\bin\Debug\net6.0\CommonLayer.pdb
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\obj\Debug\net6.0\CommonLayer.csproj.AssemblyReference.cache
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\obj\Debug\net6.0\CommonLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\obj\Debug\net6.0\CommonLayer.AssemblyInfoInputs.cache
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\obj\Debug\net6.0\CommonLayer.AssemblyInfo.cs
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\obj\Debug\net6.0\CommonLayer.csproj.CoreCompileInputs.cache
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\obj\Debug\net6.0\CommonLayer.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\obj\Debug\net6.0\refint\CommonLayer.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\obj\Debug\net6.0\CommonLayer.pdb
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\CommonLayer\obj\Debug\net6.0\ref\CommonLayer.dll

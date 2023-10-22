@@ -1,7 +1,9 @@
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\BussinesLayer\bin\Debug\net6.0\BussinesLayer.deps.json
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\BussinesLayer\bin\Debug\net6.0\BussinesLayer.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\BussinesLayer\bin\Debug\net6.0\BussinesLayer.pdb
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\BussinesLayer\bin\Debug\net6.0\CommonLayer.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\BussinesLayer\bin\Debug\net6.0\DataLayer.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\BussinesLayer\bin\Debug\net6.0\CommonLayer.pdb
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\BussinesLayer\bin\Debug\net6.0\DataLayer.pdb
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\BussinesLayer\obj\Debug\net6.0\BussinesLayer.csproj.AssemblyReference.cache
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\BussinesLayer\obj\Debug\net6.0\BussinesLayer.GeneratedMSBuildEditorConfig.editorconfig

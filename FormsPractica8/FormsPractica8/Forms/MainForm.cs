@@ -1,4 +1,7 @@
 ﻿using BussinesLayer.Crud;
+using CommonLayer;
+using FormsPractica8.Validations;
+using FluentValidation.Results;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,29 +32,47 @@ namespace FormsPractica8.Forms
         {
             EstudianteBussines estudianteBussines = new EstudianteBussines();
 
-            try
+            Students students = new Students();
+            students.nombreEstudiante = nombreTextBox.Text;
+            students.apellidoEstudiante = apellidoTextBox.Text;
+            students.telefonoEstudiante = telefonoTextBox.Text;
+            students.ciudadEstudiante = ciudadTextBox.Text;
+
+            StudentsValidator studentValidator = new StudentsValidator();
+            ValidationResult result = studentValidator.Validate(students);
+
+            if (!result.IsValid)
             {
-                if (validarParametros())
+                foreach (var failure in result.Errors)
                 {
-                    string nombreEstudiante = nombreTextBox.Text;
-                    string apellidoEstudiante = apellidoTextBox.Text;
-                    string telefonoEstudiante = telefonoTextBox.Text;
-                    string ciudadEstudiante = ciudadTextBox.Text;
-                    estudianteBussines.addEstudiante(nombreEstudiante, apellidoEstudiante, telefonoEstudiante, ciudadEstudiante);
-                    cargarDatosEstudiante();
-                    ClearForm();
-                }
-                else
-                {
-                    MessageBox.Show("Es necesario llenar todo el formulario.");
-                    return;
-                    
+                    MessageBox.Show("Error: " + failure.ErrorMessage);
                 }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show("Error: " + ex.Message);
+                try
+                {
+                    if (validarParametros())
+                    {
+
+                        estudianteBussines.addEstudiante(students);
+                        cargarDatosEstudiante();
+                        ClearForm();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Es necesario llenar todo el formulario.");
+                        return;
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
+
+           
 
 
         }
@@ -68,10 +89,12 @@ namespace FormsPractica8.Forms
         {
             if (validarFilaSeleccionada())
             {
-               int codigoEstudiante = int.Parse(estudianteGridView.CurrentRow.Cells[0].Value.ToString());
+                Students students = new Students();
+                students.codigoEstudiante = int.Parse(estudianteGridView.CurrentRow.Cells[0].Value.ToString());
                 EstudianteBussines estudianteBussines = new EstudianteBussines();
-                estudianteBussines.deleteEstudiante(codigoEstudiante);
+                estudianteBussines.deleteEstudiante(students);
                 cargarDatosEstudiante();
+                ClearForm();
             }
             else
             {
@@ -82,19 +105,34 @@ namespace FormsPractica8.Forms
 
         private void editarButton_Click(object sender, EventArgs e)
         {
-            if (validarFilaSeleccionada() && validarParametros())
+            if (validarFilaSeleccionada())
             {
-              
-                    int codigoEstudiante = int.Parse(estudianteGridView.CurrentRow.Cells[0].Value.ToString());
-                    string nombreEstudiante = nombreTextBox.Text;
-                    string apellidoEstudiante = apellidoTextBox.Text;
-                    string telefonoEstudiante = telefonoTextBox.Text;
-                    string ciudadEstudiante = ciudadTextBox.Text;
-
                     EstudianteBussines estudianteBussines = new EstudianteBussines();
-                    estudianteBussines.updateEstudiante(codigoEstudiante, nombreEstudiante, apellidoEstudiante, telefonoEstudiante, ciudadEstudiante);
-                    cargarDatosEstudiante();
-                    ClearForm();
+                    
+                    Students students = new Students();
+                    students.codigoEstudiante = int.Parse(estudianteGridView.CurrentRow.Cells[0].Value.ToString());
+                    students.nombreEstudiante = nombreTextBox.Text;
+                    students.apellidoEstudiante = apellidoTextBox.Text;
+                    students.telefonoEstudiante = telefonoTextBox.Text;
+                    students.ciudadEstudiante = ciudadTextBox.Text;
+
+                StudentsValidator studentValidator = new StudentsValidator();
+                ValidationResult result = studentValidator.Validate(students);
+
+                if (!result.IsValid)
+                {
+                    foreach (var failure in result.Errors)
+                    {
+                        MessageBox.Show("Error: " + failure.ErrorMessage);
+                    }
+                }
+                else
+                {                  
+                            estudianteBussines.updateEstudiante(students);
+                            cargarDatosEstudiante();
+                            ClearForm();                                
+                }
+                
                 
                 
             }
@@ -106,6 +144,7 @@ namespace FormsPractica8.Forms
 
         public bool validarParametros()
         {
+
             if (string.IsNullOrEmpty(nombreTextBox.Text) ||
                string.IsNullOrEmpty(apellidoTextBox.Text) ||
                string.IsNullOrEmpty(telefonoTextBox.Text) ||
@@ -135,6 +174,12 @@ namespace FormsPractica8.Forms
                 telefonoTextBox.Text = estudianteGridView.CurrentRow.Cells[3].Value.ToString();
                 ciudadTextBox.Text = estudianteGridView.CurrentRow.Cells[4].Value.ToString();
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            EstudianteBussines studentBusiness = new EstudianteBussines();
+            estudianteGridView.DataSource = studentBusiness.SearchStudents(txtBuscar.Text);
         }
     }
 }

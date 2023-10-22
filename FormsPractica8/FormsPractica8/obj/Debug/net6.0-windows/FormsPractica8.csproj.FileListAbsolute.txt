@@ -3,6 +3,7 @@ C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\n
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\FormsPractica8.runtimeconfig.json
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\FormsPractica8.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\FormsPractica8.pdb
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\FluentValidation.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
@@ -10,8 +11,10 @@ C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\n
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\BussinesLayer.dll
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\CommonLayer.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\DataLayer.dll
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\BussinesLayer.pdb
+C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\CommonLayer.pdb
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\bin\Debug\net6.0-windows\DataLayer.pdb
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\obj\Debug\net6.0-windows\FormsPractica8.csproj.AssemblyReference.cache
 C:\Users\RabanTRJO\Documents\Practica3\FormsPractica8\FormsPractica8\obj\Debug\net6.0-windows\FormsPractica8.Forms.MainForm.resources

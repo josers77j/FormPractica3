@@ -1,4 +1,5 @@
-﻿using DataLayer.Data;
+﻿using CommonLayer;
+using DataLayer.Data;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,27 +12,33 @@ namespace BussinesLayer.Crud
     public class EstudianteBussines
     {
         EstudianteData estudianteData = new EstudianteData();
-
         public DataTable getEstudiante()
         {
             DataTable estudianteTable  = new DataTable();
             estudianteTable = estudianteData.getAllEstudiantes();
             return estudianteTable;
         }
-
-        public void addEstudiante(string nombreEstudiante, string apellidoEstudiante, string telefonoEstudiante, string ciudadEstuiante)
+        public DataTable SearchStudents(string search)
         {
-            estudianteData.addEstudiantes(nombreEstudiante,apellidoEstudiante,telefonoEstudiante,ciudadEstuiante);
+
+            DataTable studentTable = new DataTable();
+            studentTable = estudianteData.SearchStudents(search);
+
+            return studentTable;
+        }
+        public void addEstudiante(Students students)
+        {
+            estudianteData.addEstudiantes(students);
         }
 
-        public void updateEstudiante(int codigoEstudiante, string nombreEstudiante, string apellidoEstudiante, string telefonoEstudiante, string ciudadEstuiante)
+        public void updateEstudiante(Students students)
         {
-            estudianteData.updateEstudiantes(codigoEstudiante,nombreEstudiante, apellidoEstudiante, telefonoEstudiante, ciudadEstuiante);
+            estudianteData.updateEstudiantes(students);
         }
 
-        public void deleteEstudiante(int codigoEstudiante)
+        public void deleteEstudiante(Students students)
         {
-            estudianteData.deleteEstudiantes(codigoEstudiante);
+            estudianteData.deleteEstudiantes(students);
         }
     }
 }

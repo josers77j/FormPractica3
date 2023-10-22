@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "F9RjhME+ZYOnLVHdqb2ybZEGGR7gpwDtbdtifwf1q+H1d5bNoZb2d8xI2YLQN+0GYeqXqXGV+R3LY7/0GXbXdA==",
+  "dgSpecHash": "haRZtujFvNihuJv8hk1ifuCIfEVvLxk7aYEkRfEyDFBKbvrCdxSuXB6wT5xhm9Aql0fmZi7Gi6Sz8d8MTC5X/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\RabanTRJO\\Documents\\Practica3\\FormsPractica8\\FormsPractica8\\FormsPractica8.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\RabanTRJO\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\RabanTRJO\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\RabanTRJO\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\RabanTRJO\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",

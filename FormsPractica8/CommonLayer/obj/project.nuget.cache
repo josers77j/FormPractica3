@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wV9AHabewD5Ml9l7dQ1yiL+k4RKYX9FDzKUACPfGZwkHmxb2Q/XlMyW1xv5mcrRReqQhOf4mQ5HNFAs6qi4Oag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RabanTRJO\\Documents\\Practica3\\FormsPractica8\\CommonLayer\\CommonLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RabanTRJO\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512"
+  ],
+  "logs": []
+}
