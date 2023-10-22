@@ -142,19 +142,7 @@ namespace FormsPractica8.Forms
             }
         }
 
-        public bool validarParametros()
-        {
-
-            if (string.IsNullOrEmpty(nombreTextBox.Text) ||
-               string.IsNullOrEmpty(apellidoTextBox.Text) ||
-               string.IsNullOrEmpty(telefonoTextBox.Text) ||
-               string.IsNullOrEmpty(ciudadTextBox.Text))
-            { 
-                return false;
-            }
-            
-            return true;
-        }
+    
         
         public bool validarFilaSeleccionada()
         {
